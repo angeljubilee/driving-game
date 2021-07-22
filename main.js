@@ -28,7 +28,12 @@ function handleKey(event) {
       $car.className = 'north';
       break;
     case ' ':
-      intervalId = setInterval(goCar, 16);
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      } else {
+        intervalId = setInterval(goCar, 16);
+      }
 
   }
   console.log(car);
