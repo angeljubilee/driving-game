@@ -1,12 +1,24 @@
+img {
+  height: 15vh;
+  width: auto;
+  position: absolute;
+  top: 20px;
+}
+
 .container {
   background-color: lavender;
   height: 100vh;
   width: 100vw;
 }
 
-.car {
-  display: flex;
-  height: 15vh;
-  width: auto;
-  padding-top: 20px;
+.south {
+  transform: rotate(90deg);
+}
+
+.west {
+  transform: rotate(180deg);
+}
+
+.north {
+  transform: rotate(-90deg);
 }
