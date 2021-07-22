@@ -52,6 +52,7 @@ function goCar() {
     case 'south':
       car.y += 4;
       $car.style.top = car.y + 'px';
+      break;
     case 'north':
       car.y -= 4;
       $car.style.top = car.y + 'px';
